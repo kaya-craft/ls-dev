@@ -1,0 +1,137 @@
+/*
+ * LsDev design tokens — validated direction ("B + sidebar de C", Oct 2026).
+ * Light and dark follow the system (prefers-color-scheme).
+ *
+ * Usage: import this file from src/style.css right after `@import "tailwindcss";`
+ * The `@theme inline` block exposes every token as a Tailwind utility:
+ *   bg-bg, bg-side, bg-card, bg-soft, border-line, text-ink, text-ink-2, text-ink-3,
+ *   bg-accent, text-accent, bg-accent-soft, bg-warm, text-ok, bg-idle, text-danger…
+ *   and the service "pastille" pairs: bg-p-node-bg text-p-node, bg-p-pg-bg text-p-pg…
+ */
+
+@theme inline {
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+
+  --color-bg: var(--lsd-bg);
+  --color-side: var(--lsd-side);
+  --color-card: var(--lsd-card);
+  --color-soft: var(--lsd-soft);
+  --color-hover: var(--lsd-hover);
+  --color-row-hover: var(--lsd-row-hover);
+  --color-active: var(--lsd-active);
+  --color-line: var(--lsd-line);
+  --color-line-2: var(--lsd-line-2);
+  --color-track: var(--lsd-track);
+
+  --color-ink: var(--lsd-text);
+  --color-ink-2: var(--lsd-text-2);
+  --color-ink-3: var(--lsd-text-3);
+
+  --color-accent: var(--lsd-accent);          /* CPU, links to open ports, primary buttons, focus */
+  --color-accent-fg: var(--lsd-accent-fg);
+  --color-accent-soft: var(--lsd-accent-soft);
+  --color-warm: var(--lsd-warm);              /* memory, logo dot */
+  --color-ok: var(--lsd-ok);                  /* port responding, Docker running */
+  --color-idle: var(--lsd-idle);              /* port not responding, stopped */
+  --color-danger: var(--lsd-danger);          /* Kill, Remove, errors */
+  --color-knob: var(--lsd-knob);
+
+  --color-term-bg: var(--lsd-term-bg);        /* LogView, always dark */
+  --color-term-fg: var(--lsd-term-fg);
+  --color-term-dim: var(--lsd-term-dim);
+  --color-term-err: var(--lsd-term-err);      /* stderr lines */
+
+  --color-branch-bg: var(--lsd-br-bg);        /* worktree branch badge */
+  --color-branch: var(--lsd-br);
+
+  /* Service pastilles (generic initials, never brand logos) */
+  --color-p-node-bg: var(--lsd-p-node-bg); --color-p-node: var(--lsd-p-node);
+  --color-p-pg-bg: var(--lsd-p-pg-bg);     --color-p-pg: var(--lsd-p-pg);
+  --color-p-rd-bg: var(--lsd-p-rd-bg);     --color-p-rd: var(--lsd-p-rd);
+  --color-p-s3-bg: var(--lsd-p-s3-bg);     --color-p-s3: var(--lsd-p-s3);
+  --color-p-mail-bg: var(--lsd-p-mail-bg); --color-p-mail: var(--lsd-p-mail);
+  --color-p-ls-bg: var(--lsd-p-ls-bg);     --color-p-ls: var(--lsd-p-ls);
+  --color-p-off-bg: var(--lsd-p-off-bg);   --color-p-off: var(--lsd-p-off);
+
+  --radius-tile: 14px;     /* stat tiles, table card */
+  --radius-nav: 9px;       /* sidebar items, buttons */
+  --shadow-card: var(--lsd-shadow);
+}
+
+:root {
+  color-scheme: light;
+  --lsd-bg: #F5F2EC;
+  --lsd-side: #EDE8DF;
+  --lsd-card: #FFFEFC;
+  --lsd-soft: #F9F6F1;
+  --lsd-hover: #E6E0D5;
+  --lsd-row-hover: #FBF7F0;
+  --lsd-active: #FFFEFC;
+  --lsd-line: #ECE6DC;
+  --lsd-line-2: #DDD5C8;
+  --lsd-track: #EFE9DF;
+  --lsd-text: #1F1C17;
+  --lsd-text-2: #5C564B;
+  --lsd-text-3: #736C60;
+  --lsd-accent: #0E7A70;
+  --lsd-accent-fg: #FFFFFF;
+  --lsd-accent-soft: #E2F2EF;
+  --lsd-warm: #D9653B;
+  --lsd-ok: #1E9A55;
+  --lsd-idle: #A9A296;
+  --lsd-danger: #B4372B;
+  --lsd-knob: #FFFFFF;
+  --lsd-term-bg: #131416;
+  --lsd-term-fg: #D6D8DC;
+  --lsd-term-dim: #80848C;
+  --lsd-term-err: #F2796C;
+  --lsd-br-bg: #F1ECFB;
+  --lsd-br: #5A44A6;
+  --lsd-p-node-bg: #DDF0E4; --lsd-p-node: #1B7543;
+  --lsd-p-pg-bg: #E1EAFA;   --lsd-p-pg: #2C5BB8;
+  --lsd-p-rd-bg: #FBE4E0;   --lsd-p-rd: #AE3428;
+  --lsd-p-s3-bg: #FCEADB;   --lsd-p-s3: #9C4A14;
+  --lsd-p-mail-bg: #EEE8FB; --lsd-p-mail: #5A41AE;
+  --lsd-p-ls-bg: #DCF1EE;   --lsd-p-ls: #0E6A64;
+  --lsd-p-off-bg: #EFEBE4;  --lsd-p-off: #8A8377;
+  --lsd-shadow: 0 1px 2px rgba(40, 30, 15, .05), 0 4px 14px rgba(40, 30, 15, .05);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --lsd-bg: #161411;
+    --lsd-side: #1B1915;
+    --lsd-card: #201D19;
+    --lsd-soft: #1C1A16;
+    --lsd-hover: #2A2621;
+    --lsd-row-hover: #26221D;
+    --lsd-active: #2A2621;
+    --lsd-line: #2E2A24;
+    --lsd-line-2: #3D3830;
+    --lsd-track: #2F2B25;
+    --lsd-text: #EEE9E1;
+    --lsd-text-2: #B5AD9F;
+    --lsd-text-3: #978F82;
+    --lsd-accent: #3FC1B1;
+    --lsd-accent-fg: #0D1F1D;
+    --lsd-accent-soft: rgba(63, 193, 177, .14);
+    --lsd-warm: #F08A60;
+    --lsd-ok: #4CC98A;
+    --lsd-idle: #6F685D;
+    --lsd-danger: #FF8A74;
+    --lsd-knob: #CFC8BC;
+    --lsd-term-bg: #0F1012;
+    --lsd-br-bg: rgba(170, 150, 255, .15);
+    --lsd-br: #BBA9F2;
+    --lsd-p-node-bg: rgba(76, 201, 138, .14);  --lsd-p-node: #7BDCA8;
+    --lsd-p-pg-bg: rgba(110, 150, 255, .15);   --lsd-p-pg: #9DB8FF;
+    --lsd-p-rd-bg: rgba(255, 120, 100, .14);   --lsd-p-rd: #FF9E8C;
+    --lsd-p-s3-bg: rgba(240, 138, 96, .15);    --lsd-p-s3: #F4A882;
+    --lsd-p-mail-bg: rgba(170, 150, 255, .15); --lsd-p-mail: #BBA9F2;
+    --lsd-p-ls-bg: rgba(80, 210, 195, .14);    --lsd-p-ls: #7EE0D3;
+    --lsd-p-off-bg: #2A2621;                   --lsd-p-off: #8A8377;
+    --lsd-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 18px rgba(0, 0, 0, .25);
+  }
+}

@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "./ui/tokens.css";
+
+html, body, #app { height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  background: var(--color-bg);
+  color: var(--color-ink);
+}
