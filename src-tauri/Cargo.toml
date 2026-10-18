@@ -3,6 +3,7 @@ name = "lsdev"
 version = "0.1.0"
 description = "LsDev - local dev services monitor"
 authors = ["Khalif Lahbibi"]
+license = "MIT"
 edition = "2021"
 
 [lib]

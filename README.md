@@ -102,3 +102,7 @@ brouillon avec le `.dmg` universel.
 | `src-tauri/src/logs.rs` | flux de logs |
 | `src-tauri/src/notify.rs` | notifications d'arrêt |
 | `src/` | interface Vue |
+
+## Licence
+
+MIT. Voir [LICENSE](LICENSE).
