@@ -7,6 +7,33 @@ shell dans un conteneur, et de retirer le worktree Git d'un service.
 
 Elle remplace la CLI `ls-dev`.
 
+![Services : serveurs de dev et conteneurs Docker, avec le panneau de détail](docs/screenshots/services-light.png)
+
+## Aperçu
+
+Services en thème sombre, avec le panneau de détail d'un process :
+
+![Services en thème sombre](docs/screenshots/services-dark.png)
+
+Worktrees : taille, dernier commit et état Git de chaque worktree :
+
+![Worktrees](docs/screenshots/worktrees.png)
+
+Databases : connexions Postgres enregistrées ou détectées, éditeur SQL et résultats :
+
+![Databases](docs/screenshots/databases.png)
+
+Tunnels : URL publiques Cloudflare ouvertes sur des ports locaux :
+
+![Tunnels](docs/screenshots/tunnels.png)
+
+Les captures sont faites avec des données fictives : le frontend tourne dans un
+navigateur avec un backend simulé (`scripts/screenshots/`). Avec `pnpm dev`
+lancé, ouvrir
+`http://localhost:1420/scripts/screenshots/index.html?tool=services&theme=light&detail=1`
+(`tool` : `services`, `worktrees`, `databases` ou `tunnels` ; `theme` :
+`light` ou `dark`).
+
 ## Construire en local
 
 Prérequis :
