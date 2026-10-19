@@ -3,18 +3,18 @@
 33890     1  6-01:14:02 /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper --type=utility
 56867     1 63-04:12:20 /System/Library/CoreServices/ControlCenter.app/Contents/MacOS/ControlCenter
 74407     1 12-03:44:19 /Applications/Docker.app/Contents/MacOS/com.docker.backend
-29414     1 09-21:23:10 node /Users/klahbibi/.local/state/fnm_multishells/84858_1785308086327/bin/pnpm --filter @acme/backend dev
-29431 29414 09-21:23:09 node /Users/klahbibi/Library/pnpm/store/v11/links/@/pnpm/11.17.0/d2bc8feb93e5fc49a2923739e1aeed5234af1f1cc3d673bbe54317367850fafa/bin/../node_modules/pnpm/bin/pnpm.cjs --filter @acme/backend dev
-29482 29431 09-21:23:09 node /Users/klahbibi/Developer/@acme/shop/packages/backend/node_modules/.bin/../tsx/dist/cli.mjs watch --env-file=../../infra/.env src/server.ts
-46048 29482       08:42 /Users/klahbibi/.local/share/fnm/node-versions/v26.1.0/installation/bin/node --require /Users/klahbibi/Developer/@acme/shop/node_modules/.pnpm/tsx@4.19.2/node_modules/tsx/dist/preflight.cjs /Users/klahbibi/Developer/@acme/shop/packages/backend/src/server.ts
-29410     1 09-21:25:23 node /Users/klahbibi/.local/state/fnm_multishells/84858_1785308086327/bin/pnpm --filter @acme/worker dev
-29426 29410 09-21:25:22 node /Users/klahbibi/Library/pnpm/store/v11/links/@/pnpm/11.17.0/d2bc8feb93e5fc49a2923739e1aeed5234af1f1cc3d673bbe54317367850fafa/bin/../node_modules/pnpm/bin/pnpm.cjs --filter @acme/worker dev
-29463 29426 09-21:25:22 node /Users/klahbibi/Developer/@acme/shop/packages/worker/node_modules/.bin/../tsx/dist/cli.mjs watch --env-file=../../infra/.env src/index.ts
-95021 29463    20:25:46 /Users/klahbibi/.local/share/fnm/node-versions/v26.1.0/installation/bin/node --require /Users/klahbibi/Developer/@acme/shop/node_modules/.pnpm/tsx@4.19.2/node_modules/tsx/dist/preflight.cjs /Users/klahbibi/Developer/@acme/shop/packages/worker/src/index.ts
-79026     1 11-06:25:42 node /Users/klahbibi/.local/state/fnm_multishells/34068_1785509059969/bin/pnpm dev
-79040 79026 11-06:25:41 node /Users/klahbibi/Library/pnpm/store/v11/links/@/pnpm/11.17.0/d2bc8feb93e5fc49a2923739e1aeed5234af1f1cc3d673bbe54317367850fafa/bin/../node_modules/pnpm/bin/pnpm.cjs dev
-79064 79040 11-06:25:41 node /Users/klahbibi/Developer/@acme/blog/node_modules/.bin/../.pnpm/nuxt@4.4.7/node_modules/nuxt/bin/nuxt.mjs dev
-93994 79064 10-17:14:38 /Users/klahbibi/.local/share/fnm/node-versions/v26.1.0/installation/bin/node --enable-source-maps /Users/klahbibi/Developer/@acme/blog/.nuxt/dev/index.mjs
-87980     1       45:21 node /Users/klahbibi/.local/state/fnm_multishells/84858_1785308086327/bin/pnpm dev
-87990 87980       45:20 node /Users/klahbibi/Library/pnpm/store/v11/links/@/pnpm/11.17.0/d2bc8feb93e5fc49a2923739e1aeed5234af1f1cc3d673bbe54317367850fafa/bin/../node_modules/pnpm/bin/pnpm.cjs dev
-88001 87990       45:12 node /Users/klahbibi/Developer/@acme/shop/packages/web/node_modules/vite/bin/vite.js --host
+29414     1 09-21:23:10 node /Users/me/.local/state/fnm_multishells/84858_1785308086327/bin/pnpm --filter @acme/backend dev
+29431 29414 09-21:23:09 node /Users/me/Library/pnpm/store/v11/links/@/pnpm/11.17.0/d2bc8feb93e5fc49a2923739e1aeed5234af1f1cc3d673bbe54317367850fafa/bin/../node_modules/pnpm/bin/pnpm.cjs --filter @acme/backend dev
+29482 29431 09-21:23:09 node /Users/me/Developer/@acme/shop/packages/backend/node_modules/.bin/../tsx/dist/cli.mjs watch --env-file=../../infra/.env src/server.ts
+46048 29482       08:42 /Users/me/.local/share/fnm/node-versions/v26.1.0/installation/bin/node --require /Users/me/Developer/@acme/shop/node_modules/.pnpm/tsx@4.19.2/node_modules/tsx/dist/preflight.cjs /Users/me/Developer/@acme/shop/packages/backend/src/server.ts
+29410     1 09-21:25:23 node /Users/me/.local/state/fnm_multishells/84858_1785308086327/bin/pnpm --filter @acme/worker dev
+29426 29410 09-21:25:22 node /Users/me/Library/pnpm/store/v11/links/@/pnpm/11.17.0/d2bc8feb93e5fc49a2923739e1aeed5234af1f1cc3d673bbe54317367850fafa/bin/../node_modules/pnpm/bin/pnpm.cjs --filter @acme/worker dev
+29463 29426 09-21:25:22 node /Users/me/Developer/@acme/shop/packages/worker/node_modules/.bin/../tsx/dist/cli.mjs watch --env-file=../../infra/.env src/index.ts
+95021 29463    20:25:46 /Users/me/.local/share/fnm/node-versions/v26.1.0/installation/bin/node --require /Users/me/Developer/@acme/shop/node_modules/.pnpm/tsx@4.19.2/node_modules/tsx/dist/preflight.cjs /Users/me/Developer/@acme/shop/packages/worker/src/index.ts
+79026     1 11-06:25:42 node /Users/me/.local/state/fnm_multishells/34068_1785509059969/bin/pnpm dev
+79040 79026 11-06:25:41 node /Users/me/Library/pnpm/store/v11/links/@/pnpm/11.17.0/d2bc8feb93e5fc49a2923739e1aeed5234af1f1cc3d673bbe54317367850fafa/bin/../node_modules/pnpm/bin/pnpm.cjs dev
+79064 79040 11-06:25:41 node /Users/me/Developer/@acme/blog/node_modules/.bin/../.pnpm/nuxt@4.4.7/node_modules/nuxt/bin/nuxt.mjs dev
+93994 79064 10-17:14:38 /Users/me/.local/share/fnm/node-versions/v26.1.0/installation/bin/node --enable-source-maps /Users/me/Developer/@acme/blog/.nuxt/dev/index.mjs
+87980     1       45:21 node /Users/me/.local/state/fnm_multishells/84858_1785308086327/bin/pnpm dev
+87990 87980       45:20 node /Users/me/Library/pnpm/store/v11/links/@/pnpm/11.17.0/d2bc8feb93e5fc49a2923739e1aeed5234af1f1cc3d673bbe54317367850fafa/bin/../node_modules/pnpm/bin/pnpm.cjs dev
+88001 87990       45:12 node /Users/me/Developer/@acme/shop/packages/web/node_modules/vite/bin/vite.js --host

@@ -72,21 +72,15 @@ mod tests {
     fn project_label_shortens_developer_paths_and_drops_org() {
         let l = |p: &str| project_label(Some(p), HOME);
         assert_eq!(
-            l("/Users/klahbibi/Developer/@acme/shop/packages/backend").as_deref(),
+            l("/Users/me/Developer/@acme/shop/packages/backend").as_deref(),
             Some("shop/packages/backend")
         );
+        assert_eq!(l("/Users/me/Developer/@acme/blog").as_deref(), Some("blog"));
         assert_eq!(
-            l("/Users/klahbibi/Developer/@acme/blog").as_deref(),
-            Some("blog")
-        );
-        assert_eq!(
-            l("/Users/klahbibi/Developer/plain/app").as_deref(),
+            l("/Users/me/Developer/plain/app").as_deref(),
             Some("plain/app")
         );
-        assert_eq!(
-            l("/Users/klahbibi/tmp/thing").as_deref(),
-            Some("~/tmp/thing")
-        );
+        assert_eq!(l("/Users/me/tmp/thing").as_deref(), Some("~/tmp/thing"));
         assert_eq!(l("/opt/service").as_deref(), Some("/opt/service"));
         assert_eq!(project_label(None, HOME), None);
     }
@@ -94,7 +88,7 @@ mod tests {
     #[test]
     fn format_script_drops_interpreter_and_absolute_path() {
         assert_eq!(
-            format_script(&argv("node /Users/klahbibi/.local/state/fnm_multishells/84858/bin/pnpm --filter @acme/backend dev")),
+            format_script(&argv("node /Users/me/.local/state/fnm_multishells/84858/bin/pnpm --filter @acme/backend dev")),
             "pnpm --filter @acme/backend dev"
         );
         assert_eq!(

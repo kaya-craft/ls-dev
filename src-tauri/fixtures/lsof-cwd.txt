@@ -1,12 +1,12 @@
 p46048
 fcwd
-n/Users/klahbibi/Developer/@acme/shop/packages/backend
+n/Users/me/Developer/@acme/shop/packages/backend
 p88001
 fcwd
-n/Users/klahbibi/Developer/@acme/shop/packages/web
+n/Users/me/Developer/@acme/shop/packages/web
 p93994
 fcwd
-n/Users/klahbibi/Developer/@acme/blog
+n/Users/me/Developer/@acme/blog
 p95021
 fcwd
-n/Users/klahbibi/Developer/@acme/shop/packages/worker
+n/Users/me/Developer/@acme/shop/packages/worker

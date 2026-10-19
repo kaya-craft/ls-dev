@@ -7,7 +7,7 @@ use crate::tools::services::model::{
 };
 use crate::tools::services::sockets::parse_lsof_listeners;
 
-pub const HOME: &str = "/Users/klahbibi";
+pub const HOME: &str = "/Users/me";
 /// Fixed "now" so that start_time = NOW - etime.
 pub const NOW: u64 = 1_800_000_000;
 
@@ -17,8 +17,8 @@ const LSOF_CWD: &str = include_str!("../fixtures/lsof-cwd.txt");
 
 /// lsof-cwd.txt only covers listeners; launchers get their cwd here.
 const LAUNCHER_CWDS: [(u32, &str); 2] = [
-    (29414, "/Users/klahbibi/Developer/@acme/shop"),
-    (79026, "/Users/klahbibi/Developer/@acme/blog"),
+    (29414, "/Users/me/Developer/@acme/shop"),
+    (79026, "/Users/me/Developer/@acme/blog"),
 ];
 
 /// ps `etime`: `[[dd-]hh:]mm:ss`.

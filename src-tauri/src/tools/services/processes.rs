@@ -250,7 +250,7 @@ mod tests {
         assert_eq!(backend.runtime, "node");
         assert_eq!(
             backend.id,
-            "proc:29414:/Users/klahbibi/Developer/@acme/shop/packages/backend"
+            "proc:29414:/Users/me/Developer/@acme/shop/packages/backend"
         );
     }
 
@@ -273,7 +273,7 @@ mod tests {
                     "@acme/backend".into(),
                     "dev".into()
                 ],
-                cwd: "/Users/klahbibi/Developer/@acme/shop".into(),
+                cwd: "/Users/me/Developer/@acme/shop".into(),
             })
         );
         // The web launcher's cwd is unknown: no restart.
